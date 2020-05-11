@@ -107,7 +107,7 @@ function withPropsCombinations(component, possibleValuesByPropName, userOptions)
           Component: component,
           props: props,
           options: options,
-          key: (0, _objectHash2.default)(props)
+          key: (0, _objectHash2.default)(props, { ignoreUnknown: true })
         });
       })
     );

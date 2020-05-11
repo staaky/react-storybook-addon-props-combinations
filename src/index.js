@@ -66,7 +66,7 @@ export default function withPropsCombinations (component, possibleValuesByPropNa
             Component={component}
             props={props}
             options={options}
-            key={objectHash(props)}
+            key={objectHash(props, {ignoreUnknown: true})}
           />
         )}
       </div>
